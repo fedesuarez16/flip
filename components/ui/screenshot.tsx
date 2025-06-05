@@ -22,7 +22,7 @@ export default function Screenshot({
   height,
   className,
 }: ScreenshotProps) {
-  const { resolvedTheme } = useTheme();
+  const { theme } = useTheme();
   const [src, setSrc] = useState<string | null>(null);
 
   useEffect(() => {

@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { siteConfig } from "@/config/site";
 
 import Logo from "../../ui/logo";
 import { Section } from "../../ui/section";

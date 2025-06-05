@@ -11,7 +11,6 @@ import {
   NavbarRight,
 } from "../../ui/navbar";
 import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
-import LaunchUI from "../../logos/logoflip.webp";
 import Image from "next/image";
 import logoImage from "../../logos/logo.png";
 
