@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -22,7 +21,6 @@ export default function Screenshot({
   height,
   className,
 }: ScreenshotProps) {
-  const { theme } = useTheme();
   const [src, setSrc] = useState<string | null>(null);
 
   useEffect(() => {
