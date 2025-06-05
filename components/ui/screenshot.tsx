@@ -26,10 +26,9 @@ export default function Screenshot({
   const [src, setSrc] = useState<string | null>(null);
 
   useEffect(() => {
-    if (resolvedTheme) {
-      setSrc(resolvedTheme === "light" ? srcLight : srcDark || srcLight);
-    }
-  }, [resolvedTheme, srcLight, srcDark]);
+    // Siempre usar la imagen del tema oscuro si está disponible
+    setSrc(srcDark || srcLight);
+  }, [srcLight, srcDark]);
 
   if (!src) {
     return (

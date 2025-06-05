@@ -1,11 +1,6 @@
 import { ReactNode } from "react";
 import { siteConfig } from "@/config/site";
 
-import Figma from "../../logos/figma";
-import React from "../../logos/react";
-import ShadcnUi from "../../logos/shadcn-ui";
-import Tailwind from "../../logos/tailwind";
-import TypeScript from "../../logos/typescript";
 import Logo from "../../ui/logo";
 import { Section } from "../../ui/section";
 import { Badge } from "../../ui/badge";
@@ -18,35 +13,25 @@ interface LogosProps {
 }
 
 export default function Logos({
-  title = "Built with industry-standard tools and best practices",
+  title = "Empresas que confían en nosotros",
   badge = (
     <Badge variant="outline" className="border-brand/30 text-brand">
-      Last updated: {siteConfig.stats.updated}
+      Clientes destacados
     </Badge>
   ),
   logos = [
-    <Logo key="figma" image={Figma} name="Figma" />,
-    <Logo key="react" image={React} name="React" version="19.0.0" />,
-    <Logo
-      key="typescript"
-      image={TypeScript}
-      name="TypeScript"
-      version="5.6.3"
-    />,
-    <Logo
-      key="shadcn"
-      image={ShadcnUi}
-      name="Shadcn/ui"
-      version="2.4.0"
-      badge="New"
-    />,
-    <Logo
-      key="tailwind"
-      image={Tailwind}
-      name="Tailwind"
-      version="4.0"
-      badge="New"
-    />,
+    <Logo key="delsur" image="/components/logos/images/delsur.png" name="Del Sur" width={80} height={40} />,
+    <Logo key="sinai" image="/components/logos/images/sinai.png" name="Sinai" width={80} height={40} />,
+    <Logo key="jmotors" image="/components/logos/images/jmotors.png" name="J Motors" width={80} height={40} />,
+    <Logo key="danna" image="/components/logos/images/DANNA.png" name="Danna" width={80} height={40} />,
+    <Logo key="tecxio" image="/components/logos/images/tecxio.png" name="Tecxio" width={80} height={40} />,
+    <Logo key="yecyoc" image="/components/logos/images/yecyoc.png" name="Yecyoc" width={80} height={40} />,
+    <Logo key="opting" image="/components/logos/images/opting.png" name="Opting" width={80} height={40} />,
+    <Logo key="nunez" image="/components/logos/images/nunez.png" name="Nuñez" width={80} height={40} />,
+    <Logo key="dromex" image="/components/logos/images/dromex.png" name="Dromex" width={80} height={40} />,
+    <Logo key="praset" image="/components/logos/images/praset.png" name="Praset" width={80} height={40} />,
+    <Logo key="landsbroker" image="/components/logos/images/landsBroker.png" name="Lands Broker" width={80} height={40} />,
+    <Logo key="aserraderogris" image="/components/logos/images/aserraderogris.png" name="Aserradero Gris" width={80} height={40} />,
   ],
   className,
 }: LogosProps) {

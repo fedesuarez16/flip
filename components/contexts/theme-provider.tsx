@@ -8,6 +8,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     setMounted(true);
+    // Forzar tema oscuro
+    document.documentElement.classList.add('dark');
   }, []);
 
   if (!mounted) {
@@ -19,6 +21,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       attribute="class"
       defaultTheme="dark"
       enableSystem={false}
+      forcedTheme="dark"
     >
       {children}
     </NextThemeProvider>
