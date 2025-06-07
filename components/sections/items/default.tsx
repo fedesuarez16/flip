@@ -1,19 +1,8 @@
 import { ReactNode } from "react";
-import {
-  BlocksIcon,
-  EclipseIcon,
-  FastForwardIcon,
-  LanguagesIcon,
-  MonitorSmartphoneIcon,
-  RocketIcon,
-  ScanFaceIcon,
-  SquarePenIcon,
-  ArrowUpRight,
-} from "lucide-react";
-import { cn } from "@/lib/utils";
-
-import { Item, ItemIcon, ItemTitle, ItemDescription } from "../../ui/item";
+import { ArrowUpRight } from "lucide-react";
+import { Item, ItemTitle, ItemDescription } from "../../ui/item";
 import { Section } from "../../ui/section";
+import Image from "next/image";
 
 interface ItemProps {
   title: string;
@@ -36,9 +25,11 @@ export default function Items({
       description: "Cada bloque y componente está cuidadosamente diseñado para brindar una experiencia única que se destaque de la competencia.",
       image: (
         <div className="w-full rounded-lg overflow-hidden">
-          <img 
+          <Image 
             src="/app-light.png" 
             alt="Dashboard design" 
+            width={600}
+            height={400}
             className="w-full h-auto object-cover"
           />
         </div>

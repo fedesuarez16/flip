@@ -1,11 +1,8 @@
 "use client"
 
-import { ReactNode, useEffect, useRef } from "react";
-
-import Logo from "../../ui/logo";
+import { ReactNode } from "react";
 import { Section } from "../../ui/section";
 import { Badge } from "../../ui/badge";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 interface LogosProps {
