@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { ArrowUpRight, Code, Database, Cloud, Smartphone, LockKeyhole, BarChart3, BrainCircuit, Workflow } from "lucide-react";
+import { ArrowUpRight, Code, Database, Cloud, Smartphone, Workflow, BrainCircuit } from "lucide-react";
 import { Item, ItemTitle, ItemDescription } from "../../ui/item";
 import { Section } from "../../ui/section";
 import Image from "next/image";

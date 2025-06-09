@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { ArrowUpRight, Calendar } from "lucide-react";
 import { Item, ItemTitle, ItemDescription } from "../../ui/item";
 import { Section } from "../../ui/section";

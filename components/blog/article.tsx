@@ -1,5 +1,6 @@
 import { Calendar, User } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { Section } from "../ui/section";
 import Navbar from "../sections/navbar/default";
 import Footer from "../sections/footer/default";
@@ -69,12 +70,12 @@ export default function Article({
           </Item>
           
           <div className="my-12 flex justify-center">
-            <a 
+            <Link 
               href="/" 
               className="text-brand flex items-center gap-2 text-sm font-medium hover:underline"
             >
               ← Volver al inicio
-            </a>
+            </Link>
           </div>
         </div>
       </Section>
