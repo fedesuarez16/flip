@@ -5,9 +5,9 @@ export default function AutomatizacionMotorCrecimiento() {
     <Article
       title="Automatización: el motor oculto del crecimiento en 2025"
       description="Mientras algunas empresas siguen atrapadas en hojas de cálculo y tareas repetitivas, otras están multiplicando su productividad sin contratar más personal. ¿La clave? La automatización de procesos."
-      image="/news/automatizacion.jpg"
-      date="10 de junio, 2023"
-      author="Laura Martínez"
+      image="/news/automatizacion.png"
+      date="03 de junio, 2024"
+      author="Federico Suarez"
       category="Automatización"
       content={`
         <p>
@@ -72,7 +72,7 @@ export default function AutomatizacionMotorCrecimiento() {
         </p>
         
         <div style="display: flex; justify-content: center; margin: 2rem 0;">
-          <img src="https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/ai%20automation%20and%20the%20future%20of%20work%20ten%20things%20to%20solve%20for/ai-automation-and-the-future-of-work-1536x1536-2.jpg" 
+          <img src="https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/2025/stateofai2_ex3.svgz?cq=50&cpy=Center" 
                alt="IA y Automatización" 
                style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         </div>
@@ -110,7 +110,7 @@ export default function AutomatizacionMotorCrecimiento() {
         <div style="background-color: rgba(59, 130, 246, 0.1); border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
           <h4 style="margin-top: 0;">👉 Contactanos hoy</h4>
           <p>Descubrí cómo podrías ahorrar horas cada semana mientras hacés crecer tu negocio.</p>
-          <a href="/contacto" style="display: inline-block; background-color: #3b82f6; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">Solicitar asesoría</a>
+          <a href="/" style="display: inline-block; background-color: #3b82f6; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">Solicitar asesoría</a>
         </div>
       `}
     />
