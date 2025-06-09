@@ -14,7 +14,7 @@ export const blogPosts: BlogPost[] = [
     slug: "automatizacion-motor-crecimiento-2025",
     title: "Automatización: el motor oculto del crecimiento en 2025",
     description: "Mientras algunas empresas siguen atrapadas en hojas de cálculo y tareas repetitivas, otras están multiplicando su productividad sin contratar más personal. ¿La clave? La automatización de procesos.",
-    image: "/news/automatizacion.jpg",
+    image: "/news/automatizacion.png",
     date: "10 de junio, 2023",
     category: "Automatización",
     author: "Laura Martínez",
