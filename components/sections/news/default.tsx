@@ -3,7 +3,7 @@ import { Item, ItemTitle, ItemDescription } from "../../ui/item";
 import { Section } from "../../ui/section";
 import Image from "next/image";
 import Link from "next/link";
-import { blogPosts, BlogPost } from "@/data/blog-posts";
+import { blogPosts } from "@/data/blog-posts";
 
 interface NewsProps {
   title?: string;
