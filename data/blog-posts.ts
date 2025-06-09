@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "automatizacion-motor-crecimiento-2025",
+    title: "Automatización: el motor oculto del crecimiento en 2025",
+    description: "Mientras algunas empresas siguen atrapadas en hojas de cálculo y tareas repetitivas, otras están multiplicando su productividad sin contratar más personal. ¿La clave? La automatización de procesos.",
+    image: "/news/automatizacion.jpg",
+    date: "10 de junio, 2023",
+    category: "Automatización",
+    author: "Laura Martínez",
+    variant: "glow-brand",
+  },
+  {
     slug: "ia-desarrollo-software",
     title: "Cómo la IA está transformando el desarrollo de software",
     description: "Descubre cómo las herramientas de inteligencia artificial están redefiniendo la forma en que construimos software y las ventajas que ofrecen para aumentar la productividad y la calidad del código.",
