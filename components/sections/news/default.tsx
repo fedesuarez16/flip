@@ -28,7 +28,7 @@ export default function News({
     {
       title: "Cómo la IA está transformando el desarrollo de software",
       description: "Descubre cómo las herramientas de inteligencia artificial están redefiniendo la forma en que construimos software y las ventajas que ofrecen para aumentar la productividad y la calidad del código.",
-      image: "/news/ai-software.jpg",
+      image: "/news/image-ia.jpeg",
       date: "15 de agosto, 2023",
       category: "Inteligencia Artificial",
       link: "/blog/ia-desarrollo-software",

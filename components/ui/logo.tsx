@@ -34,10 +34,10 @@ export default function Logo({
         <Image
           src={image}
           alt={name}
-          width={width}
-          height={height}
-          className="max-h-full max-w-full opacity-70"
-        />
+        width={width}
+        height={height}
+        className="max-h-full max-w-full opacity-70"
+      />
       ) : (
         React.createElement(image, {
           width,
