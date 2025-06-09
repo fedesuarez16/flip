@@ -1,50 +1,44 @@
-import { ArrowUpRight, Calendar } from "lucide-react";
-import { Item, ItemTitle, ItemDescription } from "../../ui/item";
-import { Section } from "../../ui/section";
+import { blogPosts } from "@/data/blog-posts";
+import { ArrowUpRight, Calendar, ChevronLeft } from "lucide-react";
+import { Item, ItemTitle, ItemDescription } from "@/components/ui/item";
+import { Section } from "@/components/ui/section";
 import Image from "next/image";
 import Link from "next/link";
-import { blogPosts, BlogPost } from "@/data/blog-posts";
+import Navbar from "@/components/sections/navbar/default";
+import Footer from "@/components/sections/footer/default";
 
-interface NewsProps {
-  title?: string;
-  description?: string;
-  maxPosts?: number;
-  className?: string;
-}
-
-export default function News({
-  title = "Noticias y Artículos",
-  description = "Mantente al día con las últimas tendencias tecnológicas y novedades de nuestra empresa",
-  maxPosts = 3,
-  className,
-}: NewsProps) {
-  // Obtener los posts más recientes primero (por fecha)
+export default function BlogIndex() {
+  // Ordenar posts por fecha (más reciente primero)
   const sortedPosts = [...blogPosts].sort((a, b) => {
     return new Date(b.date).getTime() - new Date(a.date).getTime();
   });
 
-  // Limitar a la cantidad especificada
-  const postsToShow = sortedPosts.slice(0, maxPosts);
-
   return (
-    <Section className={className}>
-      <div className="max-w-container mx-auto flex flex-col items-center gap-6 sm:gap-16">
-        <div className="text-center">
-          {title && (
-            <h2 className="max-w-[700px] text-center text-3xl leading-tight font-semibold sm:text-5xl sm:leading-tight">
-              {title}
-            </h2>
-          )}
-          {description && (
-            <p className="text-muted-foreground max-w-[600px] mt-4 text-center text-lg">
-              {description}
+    <div className="min-h-screen w-full overflow-hidden bg-background text-foreground">
+      <Navbar />
+      
+      <Section className="pt-24">
+        <div className="max-w-container mx-auto px-4">
+          <div className="mb-10">
+            <Link 
+              href="/" 
+              className="text-muted-foreground hover:text-foreground flex items-center gap-1 text-sm mb-6 transition-colors"
+            >
+              <ChevronLeft className="size-4" />
+              Volver al inicio
+            </Link>
+            
+            <h1 className="text-4xl sm:text-5xl font-bold mb-6">
+              Blog
+            </h1>
+            
+            <p className="text-xl text-muted-foreground max-w-2xl">
+              Artículos, tutoriales y novedades sobre desarrollo de software, tecnologías emergentes y mejores prácticas.
             </p>
-          )}
-        </div>
-        
-        {postsToShow.length > 0 && (
-          <div className="w-full grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:gap-8">
-            {postsToShow.map((post, index) => (
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-16">
+            {sortedPosts.map((post, index) => (
               <Item 
                 key={index} 
                 variant={post.variant || "default"}
@@ -85,18 +79,10 @@ export default function News({
               </Item>
             ))}
           </div>
-        )}
-        
-        {postsToShow.length > 0 && (
-          <Link 
-            href="/blog"
-            className="text-brand border border-brand/20 hover:bg-brand/5 rounded-full px-6 py-3 text-sm font-medium flex items-center gap-2 transition-colors"
-          >
-            Ver todos los artículos
-            <ArrowUpRight className="size-4" />
-          </Link>
-        )}
-      </div>
-    </Section>
+        </div>
+      </Section>
+      
+      <Footer />
+    </div>
   );
 } 
