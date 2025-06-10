@@ -12,7 +12,7 @@ import {
 } from "../../ui/navbar";
 import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
 import Image from "next/image";
-import logoImage from "../../logos/logo.png";
+import logoImage from "../../logos/logoo.png";
 
 interface NavbarLink {
   text: string;
