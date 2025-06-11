@@ -20,42 +20,45 @@ export default function Logos({
     </Badge>
   ),
   logos = [
-    <div key="delsur" className="h-14 w-32 md:h-20 md:w-56 relative">
-      <Image src="/components/logos/images/delsur.png" alt="Del Sur" fill className="object-contain" />
-    </div>,
-    <div key="sinai" className="h-14 w-32 md:h-20 md:w-56 relative">
-      <Image src="/components/logos/images/sinai.png" alt="Sinai" fill className="object-contain" />
-    </div>,
-    <div key="jmotors" className="h-14 w-32 md:h-20 md:w-56 relative">
-      <Image src="/components/logos/images/jmotors.png" alt="J Motors" fill className="object-contain" />
-    </div>,
-    <div key="danna" className="h-14 w-32 md:h-20 md:w-56 relative">
+    <div key="danna" className="h-14 w-32 md:h-10 md:mx-8 md:w-44 relative">
       <Image src="/components/logos/images/DANNA.png" alt="Danna" fill className="object-contain" />
     </div>,
-    <div key="tecxio" className="h-14 w-32 md:h-20 md:w-56 relative">
-      <Image src="/components/logos/images/tecxio.png" alt="Tecxio" fill className="object-contain" />
+    <div key="jmotors" className="h-14 w-32 md:h-10 md:mx-8 md:w-40 relative">
+      <Image src="/components/logos/images/jmotors.png" alt="J Motors" fill className="object-contain" />
     </div>,
-    <div key="yecyoc" className="h-14 w-32 md:h-20 md:w-56 relative">
+    <div key="yecyoc" className="h-14 w-32 md:h-10 md:mx-8 md:w-40 relative">
       <Image src="/components/logos/images/yecyoc.png" alt="Yecyoc" fill className="object-contain" />
     </div>,
-    <div key="opting" className="h-14 w-32 md:h-20 md:w-56 relative">
+    <div key="opting" className="h-14 w-32 md:h-10 md:mx-8 md:w-40 relative">
       <Image src="/components/logos/images/opting.png" alt="Opting" fill className="object-contain" />
     </div>,
-    <div key="nunez" className="h-14 w-32 md:h-20 md:w-56 relative">
+    <div key="sinai" className="h-14 w-32 md:h-10 md:mx-8 md:w-40 relative">
+      <Image src="/components/logos/images/sinai.png" alt="Sinai" fill className="object-contain" />
+    </div>,
+    <div key="delsur" className="h-14 w-32 md:h-10 md:mx-8 md:w-40 relative">
+      <Image src="/components/logos/images/delsur.png" alt="Del Sur" fill className="object-contain" />
+    </div>,
+    <div key="tecxio" className="h-14 w-32 md:h-10 md:mx-8 md:w-40 relative">
+      <Image src="/components/logos/images/tecxio.png" alt="Tecxio" fill className="object-contain" />
+    </div>,
+    <div key="nunez" className="h-14 w-32 md:h-10 md:mx-8 md:w-40 relative">
       <Image src="/components/logos/images/nunez.png" alt="Nuñez" fill className="object-contain" />
     </div>,
-    <div key="dromex" className="h-14 w-32 md:h-20 md:w-56 relative">
+    <div key="dromex" className="h-14 w-32 md:h-10 md:mx-8 md:w-40 relative">
       <Image src="/components/logos/images/dromex.png" alt="Dromex" fill className="object-contain" />
     </div>,
-    <div key="praset" className="h-14 w-32 md:h-20 md:w-56 relative">
+    <div key="praset" className="h-14 w-32 md:h-10 md:mx-8 md:w-40 relative">
       <Image src="/components/logos/images/praset.png" alt="Praset" fill className="object-contain" />
     </div>,
-    <div key="landsbroker" className="h-14 w-32 md:h-20 md:w-56 relative">
+    <div key="landsbroker" className="h-14 w-32 md:h-10 md:mx-8 md:w-40 relative">
       <Image src="/components/logos/images/landsBroker.png" alt="Lands Broker" fill className="object-contain" />
     </div>,
-    <div key="aserraderogris" className="h-14 w-32 md:h-20 md:w-56 relative">
+    <div key="aserraderogris" className="h-14 w-32 md:h-10 md:mx-8 md:w-40 relative">
       <Image src="/components/logos/images/aserraderogris.png" alt="Aserradero Gris" fill className="object-contain" />
     </div>,
+     <div key="nutrivatelogo" className="h-14 w-32 md:h-10 md:mx-8 md:w-40 relative">
+     <Image src="/components/logos/images/nutrivatelogo.png" alt=" nutrivatelogo" fill className="object-contain" />
+   </div>,
   ],
   className,
 }: LogosProps) {
@@ -65,9 +68,9 @@ export default function Logos({
   return (
     <Section className={className}>
       <div className="max-w-container mx-auto flex flex-col items-center gap-4 text-center">
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-8">
           {badge !== false && badge}
-          <h2 className="text-md font-semibold sm:text-2xl">{title}</h2>
+          <h2 className="text-md font-semibold mb-8 sm:text-2xl">{title}</h2>
         </div>
         {logos !== false && logos.length > 0 && (
           <div className="w-full relative overflow-hidden">
