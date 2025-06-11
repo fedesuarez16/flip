@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
-
+import Image from "next/image";
 import { ModeToggle } from "../../ui/mode-toggle";
 import {
   Footer,
@@ -9,7 +9,7 @@ import {
   FooterBottom,
   FooterContent,
 } from "../../ui/footer";
-import LaunchUI from "../../logos/launch-ui";
+import LaunchUI from "../../logos/logo.png";
 
 interface FooterLink {
   text: string;
@@ -32,7 +32,7 @@ interface FooterProps {
 }
 
 export default function FooterSection({
-  logo = <LaunchUI />,
+  logo = <Image src="/components/logos/images/logo.png" alt="Logo" width={120} height={150} />,
   name = "Launch UI",
   columns = [
     {

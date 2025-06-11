@@ -43,15 +43,15 @@ export default function Navbar({
   logo = <Image src={logoImage} alt="Logo" width={120} height={150} />,
   homeUrl = siteConfig.url,
   mobileLinks = [
-    { text: "Getting Started", href: siteConfig.url },
-    { text: "Components", href: siteConfig.url },
-    { text: "Documentation", href: siteConfig.url },
+    { text: "Servicios", href: "/servicios" },
+    { text: "Blog", href: "/blog" },
+    { text: "Contacto", href: "/contacto" },
   ],
   actions = [
     { text: "Sign in", href: siteConfig.url, isButton: false },
     {
-      text: "Get Started",
-      href: siteConfig.url,
+      text: "Contactar",
+      href: "/contacto",
       isButton: true,
       variant: "default",
     },
